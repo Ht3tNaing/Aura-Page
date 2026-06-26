@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="meta.title">Aura Player - Audiophile Video Player & 31-Band Equalizer</title>
+  <meta name="description" data-i18n="meta.description" content="Aura Player combines an HD video engine with a professional 31-band equalizer and neon real-time visualizers." />
+  <link rel="icon" type="image/png" href="assets/app_logo.png" />
+
+  <meta property="og:title" content="Aura Player" />
+  <meta property="og:description" content="Audiophile video player with professional 31-band equalizer & neon visualizers." />
+  <meta property="og:image" content="assets/app_logo.png" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Padauk:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Decorative background glow -->
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <!-- ===== Navbar ===== -->
+  <header class="navbar">
+    <a href="#hero" class="brand">
+      <img src="assets/app_logo.png" alt="Aura Player logo" class="brand-logo" />
+      <span class="brand-name">Aura Player</span>
+    </a>
+
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <img src="assets/app_logo.png" alt="Aura Player" class="hero-logo" />
+        <h1 class="hero-title">Aura Player</h1>
+        <p class="hero-tagline" data-i18n="hero.tagline">Audiophile video player with a professional 31-band equalizer & neon visualizers.</p>
+        <p class="hero-intro" data-i18n="hero.intro">Experience video and music playback like never before. Fine-tune every frequency from deep sub-bass to crisp treble with unmatched precision.</p>
+        <div class="hero-actions">
+          <a class="btn-play" href="https://play.google.com/store/apps/details?id=com.naing.auraplayer" target="_blank" rel="noopener">
+            <svg viewBox="0 0 512 512" class="btn-play-icon" aria-hidden="true"><path fill="currentColor" d="M325.3 234.3 104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l220.7-221.3 60.1 60.1L104.6 499z"/></svg>
+            <span class="btn-play-text">
+              <small data-i18n="hero.getOn">GET IT ON</small>
+              <strong>Google Play</strong>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Features ===== -->
+    <section class="section" id="features">
+      <h2 class="section-title" data-i18n="features.title">Key Features</h2>
+      <p class="section-subtitle" data-i18n="features.subtitle">Complete control over your sound stage, right at your fingertips.</p>
+
+      <div class="feature-grid">
+        <article class="card feature-card">
+          <div class="feature-icon" aria-hidden="true">🎚️</div>
+          <h3 data-i18n="feature.eq.title">Professional 31-Band Equalizer</h3>
+          <p data-i18n="feature.eq.desc">Go beyond standard bass-boosters. Customize your sound with 31 distinct frequency bands using high-precision filters.</p>
+        </article>
+
+        <article class="card feature-card">
+          <div class="feature-icon" aria-hidden="true">🌈</div>
+          <h3 data-i18n="feature.viz.title">Stunning Neon Visualizers</h3>
+          <p data-i18n="feature.viz.desc">Watch your music come alive with gorgeous, smooth-rendered vertical spectrum visualizers that react to every beat in real-time.</p>
+        </article>
+
+        <article class="card feature-card">
+          <div class="feature-icon" aria-hidden="true">🎬</div>
+          <h3 data-i18n="feature.video.title">High-Performance Video Playback</h3>
+          <p data-i18n="feature.video.desc">Powered by a hardware-accelerated engine, enjoy buttery-smooth 4K, 1080p, and HD playback without stuttering or lag.</p>
+        </article>
+
+        <article class="card feature-card">
+          <div class="feature-icon" aria-hidden="true">📂</div>
+          <h3 data-i18n="feature.queue.title">Adaptive Queue & Playlist Manager</h3>
+          <p data-i18n="feature.queue.desc">Queue up video files and audio tracks seamlessly. Reorder, save, and reload custom presets with simple drag-and-drop.</p>
+        </article>
+
+        <article class="card feature-card">
+          <div class="feature-icon" aria-hidden="true">🔊</div>
+          <h3 data-i18n="feature.gapless.title">Gapless & Background Playback</h3>
+          <p data-i18n="feature.gapless.desc">Keep the music going with full background playback support and gapless audio transitions for continuous flow.</p>
+        </article>
+
+        <article class="card feature-card">
+          <div class="feature-icon" aria-hidden="true">✨</div>
+          <h3 data-i18n="feature.design.title">Frosted Glassmorphic Design</h3>
+          <p data-i18n="feature.design.desc">A modern, high-tech dark theme inspired by Material 3 with soft glows, smooth animations, and clean layouts.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Screenshots ===== -->
+    <section class="section" id="screenshots">
+      <h2 class="section-title" data-i18n="screens.title">See It In Action</h2>
+      <p class="section-subtitle" data-i18n="screens.subtitle">A sleek, ultra-responsive interface built for audiophiles.</p>
+
+      <div class="shots-rail">
+        <figure class="phone-frame"><img src="assets/screenshot_1.jpg" alt="Aura Player player screen" loading="lazy" /></figure>
+        <figure class="phone-frame"><img src="assets/screenshot_2.jpg" alt="Aura Player equalizer screen" loading="lazy" /></figure>
+        <figure class="phone-frame"><img src="assets/screenshot_3.jpg" alt="Aura Player screen" loading="lazy" /></figure>
+        <figure class="phone-frame"><img src="assets/screenshot_4.jpg" alt="Aura Player screen" loading="lazy" /></figure>
+      </div>
+
+      <figure class="tablet-frame">
+        <img src="assets/tablet_screenshot.jpg" alt="Aura Player on a tablet" loading="lazy" />
+      </figure>
+    </section>
+
+    <!-- ===== EQ Presets ===== -->
+    <section class="section" id="presets">
+      <h2 class="section-title" data-i18n="presets.title">EQ Presets For Every Genre</h2>
+      <p class="section-subtitle" data-i18n="presets.subtitle">Use our studio-grade presets, or save your own signature tuning.</p>
+
+      <ul class="preset-chips">
+        <li class="chip" data-i18n="preset.flat">Flat (Normal)</li>
+        <li class="chip" data-i18n="preset.bass">Bass Booster</li>
+        <li class="chip" data-i18n="preset.vocal">Vocal Clarity</li>
+        <li class="chip" data-i18n="preset.jazz">Jazz</li>
+        <li class="chip" data-i18n="preset.rock">Rock</li>
+        <li class="chip" data-i18n="preset.classical">Classical</li>
+        <li class="chip" data-i18n="preset.pop">Pop</li>
+        <li class="chip" data-i18n="preset.custom">Custom Presets</li>
+      </ul>
+    </section>
+
+    <!-- ===== Privacy ===== -->
+    <section class="section" id="privacy">
+      <div class="card privacy-card">
+        <div class="privacy-icon" aria-hidden="true">🔒</div>
+        <div>
+          <h2 class="privacy-title" data-i18n="privacy.title">Permissions & Privacy</h2>
+          <p data-i18n="privacy.desc">To deliver the best offline playback experience, Aura Player requires secure local storage permissions to locate and play your offline files. We value your privacy — none of your personal media is ever collected, tracked, or sent online.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Final CTA ===== -->
+    <section class="section cta-section">
+      <h2 class="section-title" data-i18n="cta.title">Unlock the true potential of your media</h2>
+      <a class="btn-play" href="https://play.google.com/store/apps/details?id=com.naing.auraplayer" target="_blank" rel="noopener">
+        <svg viewBox="0 0 512 512" class="btn-play-icon" aria-hidden="true"><path fill="currentColor" d="M325.3 234.3 104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l220.7-221.3 60.1 60.1L104.6 499z"/></svg>
+        <span class="btn-play-text">
+          <small data-i18n="hero.getOn">GET IT ON</small>
+          <strong>Google Play</strong>
+        </span>
+      </a>
+    </section>
+  </main>
+
+  <!-- ===== Footer / Contact ===== -->
+  <footer class="footer" id="contact">
+    <div class="footer-brand">
+      <img src="assets/app_logo.png" alt="Aura Player" class="footer-logo" />
+      <span>Aura Player</span>
+    </div>
+
+    <p class="footer-follow" data-i18n="contact.title">Follow & Contact</p>
+    <div class="socials">
+      <a class="social" href="https://t.me/ht3tnaing" target="_blank" rel="noopener">
+        <img src="assets/telegram.png" alt="Telegram" />
+        <span>@ht3tnaing</span>
+      </a>
+      <a class="social" href="https://www.tiktok.com/@ht3t_naing" target="_blank" rel="noopener">
+        <img src="assets/tik-tok.png" alt="TikTok" />
+        <span>@ht3t_naing</span>
+      </a>
+    </div>
+
+    <p class="footer-copy">&copy; <span id="year"></span> Aura Player. <span data-i18n="contact.rights">All rights reserved.</span></p>
+  </footer>
+
+  <script src="javascript/script.js"></script>
+</body>
+</html>
