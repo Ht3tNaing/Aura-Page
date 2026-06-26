@@ -95,6 +95,40 @@ function init() {
 
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  setupMobileMenu();
+}
+
+function setupMobileMenu() {
+  const toggle = document.getElementById("menuToggle");
+  const nav = document.getElementById("siteNav");
+  if (!toggle || !nav) return;
+
+  const closeMenu = () => {
+    nav.classList.remove("is-open");
+    toggle.setAttribute("aria-expanded", "false");
+  };
+
+  toggle.addEventListener("click", () => {
+    const isOpen = nav.classList.toggle("is-open");
+    toggle.setAttribute("aria-expanded", String(isOpen));
+  });
+
+  // Close after tapping a link
+  nav.querySelectorAll(".nav-link").forEach((link) => {
+    link.addEventListener("click", closeMenu);
+  });
+
+  // Close when clicking outside the navbar
+  document.addEventListener("click", (e) => {
+    if (!nav.classList.contains("is-open")) return;
+    if (!e.target.closest(".navbar")) closeMenu();
+  });
+
+  // Close on Escape
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeMenu();
+  });
 }
 
 if (document.readyState === "loading") {

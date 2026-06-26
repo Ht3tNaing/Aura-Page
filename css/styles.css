@@ -100,6 +100,33 @@ main, .navbar, .footer { position: relative; z-index: 1; }
 .nav-link:hover { color: var(--text); }
 .nav-link:hover::after { width: 100%; }
 
+/* Hamburger button (hidden on desktop) */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: 1px solid var(--surface-border);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+}
+.menu-bar {
+  display: block;
+  width: 20px;
+  height: 2px;
+  margin: 0 auto;
+  border-radius: 2px;
+  background: var(--text);
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+.menu-toggle[aria-expanded="true"] .menu-bar:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.menu-toggle[aria-expanded="true"] .menu-bar:nth-child(2) { opacity: 0; }
+.menu-toggle[aria-expanded="true"] .menu-bar:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
 .lang-switch {
   display: flex;
   gap: 4px;
@@ -378,9 +405,47 @@ main, .navbar, .footer { position: relative; z-index: 1; }
 .social img { width: 22px; height: 22px; }
 .footer-copy { margin-top: 1.6rem; color: var(--text-dim); font-size: 0.85rem; }
 
+/* ===== Mobile navigation menu ===== */
+@media (max-width: 720px) {
+  .menu-toggle { display: flex; }
+
+  .sitemap {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 0.4rem 0.6rem 0.8rem;
+    background: rgba(8, 12, 22, 0.96);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--surface-border);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.22s ease, opacity 0.22s ease, visibility 0.22s;
+  }
+  .sitemap.is-open {
+    transform: scaleY(1);
+    opacity: 1;
+    visibility: visible;
+  }
+  .nav-link {
+    padding: 0.85rem 0.8rem;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  .nav-link::after { display: none; }
+  .nav-link:active,
+  .nav-link:hover { background: rgba(255, 255, 255, 0.06); }
+}
+
 @media (max-width: 540px) {
   .privacy-card { flex-direction: column; }
-  .brand-name { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
