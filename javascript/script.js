@@ -6,6 +6,10 @@ const translations = {
     "meta.title": "Aura Player - Audiophile Video Player & 31-Band Equalizer",
     "meta.description": "Aura Player combines an HD video engine with a professional 31-band equalizer and neon real-time visualizers.",
 
+    "nav.features": "Features",
+    "nav.screenshots": "Screenshots",
+    "nav.contact": "Contact",
+
     "hero.tagline": "Audiophile video player with a professional 31-band equalizer & neon visualizers.",
     "hero.intro": "Experience video and music playback like never before. Fine-tune every frequency from deep sub-bass to crisp treble with unmatched precision.",
     "hero.getOn": "GET IT ON",
