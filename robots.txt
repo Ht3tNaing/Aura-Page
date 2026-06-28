@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aura-player.naikyee.com/sitemap.xml
